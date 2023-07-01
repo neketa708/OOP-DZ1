@@ -26,6 +26,10 @@ public class Main {
         user1.getBasket().addProduct(category1.getProducts().get(0));
         user2.getBasket().addProduct(category2.getProducts().get(1));
 
+category1.getProducts().remove(0);
+category2.getProducts().remove(1);
+
+
         System.out.println(user1.getLogin()+"Покупки ");
         ArrayList<Product> user1Products = user1.getBasket().getProducts();
         for (Product product : user1Products) {
@@ -36,5 +40,6 @@ public class Main {
         for (Product product : user2Products) {
             System.out.println(product.getName()+ " " +product.getPrice()+ " "+product.getRating());
         }
+        magazen.printCatalog();
     }
 }
