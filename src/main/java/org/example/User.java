@@ -3,7 +3,7 @@ package org.example;
 public class User {
     private String login;
     private String password;
-    private Basket basket;
+    private Basket basket;// ссылается на класс Basket
 
     public User(String login, String password) {
         this.login = login;
