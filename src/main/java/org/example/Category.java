@@ -8,7 +8,7 @@ public class Category {
 
     public Category(String name) {
         this.name = name;
-        this.products =new ArrayList<>();
+        this.products =new ArrayList<>();//что делает данная запись? если при выборе конструктора в параметрах данного метода передается ArrayList<Product> products и записывается this.products = products;
     }
 
     public String getName() {
